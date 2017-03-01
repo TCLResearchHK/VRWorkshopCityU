@@ -22,6 +22,8 @@ Download and install the softwares as follows:
     * During installation, select 64-bit (32-bit is also fine), choose components including "Unity 5.5.x", "Documentation", "Standard Assets".
 
     * We don't plan to build native Android / iOS apps, so leave those components as unchecked.
+    
+ *[Google Cardboard SDK](https://github.com/googlevr/gvr-unity-sdk/raw/master/GoogleVRForUnity.unitypackage)
 
 
  * [Blender](https://www.blender.org/download/)
