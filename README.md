@@ -7,7 +7,11 @@ A VR workshop organized for the Department of Media and Communication, City Univ
 Download and install the softwares as follows:
 
  * [Unity](https://store.unity.com/download?ref=personal)
-   personal edition, version 5.5.x or up
+   personal edition, version 5.5.x or up.
+
+    * During installation, select 64-bit (32-bit is also fine), choose components including "Unity 5.5.x", "Documentation", "Standard Assets".
+
+    * We don't plan to build native Android / iOS, so leave those components as unchecked.
 
  * [SketchUp Make](https://www.sketchup.com/download)
 
