@@ -23,8 +23,6 @@ Download and install the softwares as follows:
 
     * We don't plan to build native Android / iOS apps, so leave those components as unchecked.
     
- *[Google Cardboard SDK](https://github.com/googlevr/gvr-unity-sdk/raw/master/GoogleVRForUnity.unitypackage)
-
 
  * [Blender](https://www.blender.org/download/)
    version 2.78 or up, 64bit or 32bit
