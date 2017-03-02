@@ -48,6 +48,8 @@ Head to https://github.com/, sign up for a free account. It is for hosting the w
 
 Click the **+** button at the top-right corner to create a new repository. Give it a name (e.g. `vr-room`), check the box labeled "Initialize this repository with a README", click "Create repository".
 
+In the repository page, select the "settings" tab. Scroll down and find the "GitHub Pages" section. In the "Source" dropdown menu, select "master branch" and click "Save". The "GitHub Pages" section should now display something like `Your site is ready to be published at https://andyli.github.io/vr-room/.`.
+
 #### 3.3 Get a Cloud9 account
 
 Create a [Cloud9](https://c9.io/) account. It is an online development platform that includes an editor as well as other development tools (e.g. git).
@@ -64,4 +66,40 @@ Note that creating a normal account requires a credit card (no charge, just for 
  
  * Choose the HTML5 template.
 
-...
+#### 3.5 Create a WebVR web page
+
+Open the workspace you have just created. In the top menu, select "File" -> "New From Template" -> "HTML file". Save it as "index.html" by selecting "File" -> "Save".
+
+Within `<head>...</head>`, add `<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>`.
+
+Within `<body>...</body>`, add the code as follows:
+```html
+<a-scene>
+    <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+    <a-box position="-1 0.5 -3" rotation="0 45 0" width="1" height="1" depth="1" color="#4CC3D9"></a-box>
+    <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+    <a-sky color="#ECECEC"></a-sky>
+</a-scene>
+```
+
+You can now preview the web page by selecting "Preview" -> "Live Preview File (index.html)".
+
+Now modify the code to load the interior 3D model indstead of displaying the premitive shapes. Tips:
+
+ * Upload files by "File" -> "Upload Local Files...".
+
+ * Use [`<a-collada-model>`](https://aframe.io/docs/0.5.0/primitives/a-collada-model.html).
+ 
+ * Use the [A-Frame Inspector](https://aframe.io/docs/0.5.0/guides/using-the-aframe-inspector.html) to navigate and play with different settings.
+
+#### 3.6 Publish the web page
+
+In the bottom "bash" termainal panel, input the commands as follows:
+``` bash
+git add --all
+git commit -m "update web site"
+git push
+```
+
+The files in the Cloud9 workspace will be synchronized to your GitHub repository. You can now use the GitHub Pages link created in the earlier step to view the web page.
