@@ -1,5 +1,7 @@
 # VR Workshop
 
+[![Join the chat at https://gitter.im/TCLResearchHK/VRWorkshop](https://badges.gitter.im/TCLResearchHK/VRWorkshop.svg)](https://gitter.im/TCLResearchHK/VRWorkshop?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A VR workshop organized for the Department of Media and Communication, City University of Hong Kong.
 
 ## Abstract
