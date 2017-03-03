@@ -8,7 +8,7 @@ A VR workshop organized for the Department of Media and Communication, City Univ
 
 You will have hands on experience in creating VR applications using different tools. You will create an interior enviroment (read: a small room) twice, first using [Unity](https://unity3d.com/), and then using [A-Frame](https://aframe.io/).
 
-Firstly, you will model the room with [Sweet Home 3D](http://www.sweethome3d.com/). [Blender](https://www.blender.org/download/) will be used for modifying the 3D models.
+Firstly, you will model the room with [Sweet Home 3D](http://www.sweethome3d.com/), with additional furniture models downloaded from [SketchUp 3D Warehouse](https://3dwarehouse.sketchup.com/). [Blender](https://www.blender.org/download/) will be used for modifying the 3D models.
 
 Secondly, you will turn the room model into a desktop application using Unity. The resulting application can be viewed on desktop. We will also demostrate what is needed to be done to make it runs in [HTC Vive](https://www.vive.com/), though due to time and hardware limitation, you will only develop a non-VR version.
 
