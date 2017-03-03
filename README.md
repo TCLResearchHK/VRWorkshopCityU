@@ -89,7 +89,7 @@ Now modify the code to load the interior 3D model indstead of displaying the pre
 
  * Upload files by "File" -> "Upload Local Files...".
 
- * Use [`<a-collada-model>`](https://aframe.io/docs/0.5.0/primitives/a-collada-model.html).
+ * Use [`<a-obj-model>`](https://aframe.io/docs/0.5.0/primitives/a-obj-model.html) and [`<a-collada-model>`](https://aframe.io/docs/0.5.0/primitives/a-collada-model.html).
  
  * Use the [A-Frame Inspector](https://aframe.io/docs/0.5.0/guides/using-the-aframe-inspector.html) to navigate and play with different settings.
 
