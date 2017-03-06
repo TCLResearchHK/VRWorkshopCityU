@@ -32,7 +32,72 @@ Download and install the softwares as follows:
 
 ### 1. Interior 3D modeling
 
+#### 1.1 Open up
+Open SweetHome and following the steps below:
+
+#### 1.2 Create a Room
+Click “Create room” to create the floor of the room you want to create. 
+Then, click “Create wall” and build walls around the floor.
+
+#### 1.3 Set textures and UV map for the walls, floor and ceilings
+Select all Walls and Floor-> double click -> Click Display Ceilings -> Choose Texture for the radio button of floor, ceilings and walls, Click the Square box for choosing the texture you want.
+
+#### 1.4 Design your room
+Choose different furniture, doors and windows you want from the left menu and Put it to your room, double click the items and choose the texture or color you want. 
+
+#### 1.5 Extra sources
+For searching texture online, you can use the link provided by SweetHome (http://www.sweethome3d.com/zh-tw/importTextures.jsp) or you could search the type of texture on google with the word “seamless”, for example, if you want to search leather, you could type in “leather seamless” in search bar, all the texture you find should be in square.
+
+#### 1.6 Export models
+3D Vision -> Export to OBJ(All) to one folder.
+
+
 ### 2. Unity application development
+
+#### 2.1 Get a Unity account 
+Head to https://id.unity.com/en/conversations/25b5ab91-6398-4ddc-b405-d7147cde2783003f and create your unity account. Or you could click signup when open up Unity. Then Signin to Unity.
+
+#### 2.3 Open a Project
+Open a new project, give it a name and click Create Projects.
+Window -> layout -> 4split (For comfort display only)
+Drag all the files exported from SweetHome to the Hierarchy in Unity 
+
+#### 2.4 Lighting 
+Set walls and room to statics
+set lighting (Window -> lighting)
+Drag Directional light to the source in lighting 
+Unclick backed GI
+Set Window Glass Materials -> Rendering mode to “Transparent” -> Metallic to 0.8 -> Smoothness to 1 -> Allbedo Alpha around 50%
+Add area light for windows
+
+#### 2.5 Components/Effects/Camera Settings
+Set collider -> right click in projects -> 3D objects -> Cube -> resizes the size of the cube to the same as the wall
+Download “Cinematic effects” from Asset Store -> Click download -> Click import
+Delete Main Camera in project
+Assets -> import package -> Character
+Drag FPSController to Hierarchy
+Set character collider -> set Radius and Height to 10
+Set walk speed to 300, Stick to ground force to 0, gravity multiplier to 0
+Field of view -> ~43, Near -> 10
+Check HDR under FPS Controller
+Add component under the FPS Controller-> search tone mapping, set color, set exposure
+Add component under the FPS Controller -> search anti-aliasing
+Set materials (For fine tune)
+
+#### 2.6 Save Scene
+Create a "Scene" folder under Hierarchy
+File -> Save Scene -> save your scene to scene folder and name it. 
+
+#### 2.7 Project setting and build setting
+Edit-> project setting-> player ->Rendering Path chooses “Deferred” -> color space choose “Linear”
+File-> Build setting -> Architecture ->x86_64-> Build 
+ 
+#### 2.8 For HTC vive VR Version
+Download “SteamVR” from Asset Store->Click download-> Click import
+From CameraRig under prefab folder drag to the scene and replace the FPS Controller.
+Edit-> project setting->player ->Rendering Path chooses “Forward” 
+
+
 
 ### 3. WebVR application development
 
