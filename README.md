@@ -79,15 +79,21 @@ Within `<body>...</body>`, add the code as follows:
 </a-scene>
 ```
 
-You can now preview the web page by selecting "Preview" -> "Live Preview File (index.html)".
+You can now preview the web page by selecting "Preview" -> "Live Preview File (index.html)". You may use the [A-Frame Inspector](https://aframe.io/docs/0.5.0/guides/using-the-aframe-inspector.html) (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>i</kbd>) to navigate and play with different settings.
 
-Now modify the code to load the interior 3D model indstead of displaying the premitive shapes. Tips:
+Now, modify the code to load the interior 3D model indstead of displaying the premitive shapes.
 
- * Upload files by "File" -> "Upload Local Files...".
+First of all, upload files by "File" -> "Upload Local Files...", or simply drag-and-drop the files from file explorer to the Cloud9 workspace file panel.
 
- * Use [`<a-obj-model>`](https://aframe.io/docs/0.5.0/primitives/a-obj-model.html) and [`<a-collada-model>`](https://aframe.io/docs/0.5.0/primitives/a-collada-model.html).
- 
- * Use the [A-Frame Inspector](https://aframe.io/docs/0.5.0/guides/using-the-aframe-inspector.html) to navigate and play with different settings.
+Then, we need to convert the .obj file exported from Sweet Home 3D to another format (.dae) first, because A-Frame does not fully support the .obj file exported by Sweet Home 3D. To do so, we use a command line program, [assimp](http://www.assimp.org/). In the bottom "bash" termainal panel, input the commands as follows:
+``` bash
+sudo apt-get update
+sudo apt-get install assimp-utils
+assimp interior.obj interior.dae
+```
+Remember to replace `interior.obj` with the file name of your model.
+
+Let's replace the primitive shapes to our room model by using the [`<a-collada-model>`](https://aframe.io/docs/0.5.0/primitives/a-collada-model.html) entity.
 
 #### 3.6 Publish the web page
 
