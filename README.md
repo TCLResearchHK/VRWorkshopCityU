@@ -63,7 +63,6 @@ Window -> layout -> 4split (For comfort display only)
 Drag all the files exported from SweetHome to the Hierarchy in Unity 
 
 #### 2.4 Lighting 
-Set walls and room to statics
 set lighting (Window -> lighting)
 Drag Directional light to the source in lighting 
 Unclick backed GI
