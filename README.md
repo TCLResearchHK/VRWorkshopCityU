@@ -48,6 +48,8 @@ Choose different furniture, doors and windows you want from the left menu and Pu
 #### 1.5 Extra sources
 For searching texture online, you can use the link provided by SweetHome (http://www.sweethome3d.com/zh-tw/importTextures.jsp) or you could search the type of texture on google with the word “seamless”, for example, if you want to search leather, you could type in “leather seamless” in search bar, all the texture you find should be in square.
 
+For Extra 3D furnitures, SweetHome also provided source in http://www.sweethome3d.com/zh-tw/importModels.jsp. Download the models and import by clicking Furnitures->Choose Models
+
 #### 1.6 Export models
 3D Vision -> Export to OBJ(All) to one folder.
 
