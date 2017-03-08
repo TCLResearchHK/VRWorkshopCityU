@@ -35,69 +35,90 @@ Download and install the softwares as follows:
 ### 1. Interior 3D modeling
 
 #### 1.1 Open up
-Open SweetHome and following the steps below:
+Open Sweet Home 3D and following the steps below:
 
 #### 1.2 Create a Room
-Click “Create room” to create the floor of the room you want to create. 
-Then, click “Create wall” and build walls around the floor.
+From the toolbar on the top, click the “Create room” button to create the floor of the room you want to create. 
+Then, click the “Create wall” button and build walls around the floor.
 
-#### 1.3 Set textures and UV map for the walls, floor and ceilings
-Select all Walls and Floor-> double click -> Click Display Ceilings -> Choose Texture for the radio button of floor, ceilings and walls, Click the Square box for choosing the texture you want.
+#### 1.3 Set textures for the walls, floor, and ceilings
+Double click on the floor -> check "Display Ceilings" -> choose "Texture" for the radio buttons of floor, ceilings, and walls. Click the square box for choosing the texture you want.
 
 #### 1.4 Design your room
-Choose different furniture, doors and windows you want from the left menu and Put it to your room, double click the items and choose the texture or color you want. 
+Choose different furnitures, doors, and windows you want from the left menu and drag it to your room. Double click the items and choose the texture or color you want. 
 
 #### 1.5 Extra sources
-For searching texture online, you can use the link provided by SweetHome (http://www.sweethome3d.com/zh-tw/importTextures.jsp) or you could search the type of texture on google with the word “seamless”, for example, if you want to search leather, you could type in “leather seamless” in search bar, all the texture you find should be in square.
+For searching texture online, you can use the ones suggested by Sweet Home 3D (http://www.sweethome3d.com/importTextures.jsp). Alternatively, you could search the type of texture on Google with the word “seamless”. For example, if you want to search for leather, you could input “leather seamless” in the search bar. Note that you should look for texture images in square (1:1 aspect ratio).
 
-For Extra 3D furnitures, SweetHome also provided source in http://www.sweethome3d.com/zh-tw/importModels.jsp or you could search free 3D interior models which is in the fomat of .OBJ/.KMZ/.3DS/.DAE. Download the models and import by clicking Furnitures->Choose Models
+For extra furniture models, Sweet Home 3D also suggested some sources in http://www.sweethome3d.com/zh-tw/importModels.jsp. Besides, you could search free 3D interior models which is in the fomat of .OBJ/.KMZ/.3DS/.DAE. Download the models and import them to Sweet Home 3D by clicking Furnitures -> Choose Models.
 
 #### 1.6 Export models
-3D Vision -> Export to OBJ(All) to one folder.
+"3D view" -> "Export to OBJ format", which will export everything to a folder.
 
 
 ### 2. Unity application development
 
 #### 2.1 Get a Unity account 
-Head to https://id.unity.com/en/conversations/25b5ab91-6398-4ddc-b405-d7147cde2783003f and create your unity account. Or you could click signup when open up Unity. Then Signin to Unity.
+Head to https://id.unity.com/en/conversations/25b5ab91-6398-4ddc-b405-d7147cde2783003f and create your unity account. Or you may click signup when open up Unity. Then Signin to Unity.
 
 #### 2.3 Open a Project
 Open a new project, give it a name and click Create Projects.
-Window -> layout -> 4split (For comfort display only)
-Drag all the files exported from SweetHome to the Hierarchy in Unity 
+
+Window -> layout -> 4 split (For comfort display only)
+
+Drag all the files exported from Sweet Home 3D to the Hierarchy in Unity 
 
 #### 2.4 Lighting 
 set lighting (Window -> lighting)
+
 Drag Directional light to the source in lighting 
+
 Unclick backed GI
+
 Set Window Glass Materials -> Rendering mode to “Transparent” -> Metallic to 0.8 -> Smoothness to 1 -> Allbedo Alpha around 50%
+
 Add area light for windows
 
 #### 2.5 Components/Effects/Camera Settings
 Set collider -> right click in projects -> 3D objects -> Cube -> resizes the size of the cube to the same as the wall
+
 Download “Cinematic effects” from Asset Store -> Click download -> Click import
+
 Delete Main Camera in project
+
 Assets -> import package -> Character
+
 Drag FPSController to Hierarchy
+
 Set character collider -> set Radius and Height to 10
+
 Set walk speed to 300, Stick to ground force to 0, gravity multiplier to 0
+
 Field of view -> ~43, Near -> 10
+
 Check HDR under FPS Controller
+
 Add component under the FPS Controller-> search tone mapping, set color, set exposure
+
 Add component under the FPS Controller -> search anti-aliasing
+
 Set materials (For fine tune)
 
 #### 2.6 Save Scene
 Create a "Scene" folder under Hierarchy
+
 File -> Save Scene -> save your scene to scene folder and name it. 
 
 #### 2.7 Project setting and build setting
 Edit-> project setting-> player ->Rendering Path chooses “Deferred” -> color space choose “Linear”
+
 File-> Build setting -> Architecture ->x86_64-> Build 
  
 #### 2.8 For HTC vive VR Version
 Download “SteamVR” from Asset Store->Click download-> Click import
+
 From CameraRig under prefab folder drag to the scene and replace the FPS Controller.
+
 Edit-> project setting->player ->Rendering Path chooses “Forward” 
 
 
