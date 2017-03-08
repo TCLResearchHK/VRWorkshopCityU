@@ -73,7 +73,7 @@ set lighting (Window -> lighting)
 
 Drag Directional light to the source in lighting 
 
-Unclick backed GI
+Unchecked baked GI
 
 Set Window Glass Materials -> Rendering mode to “Transparent” -> Metallic to 0.8 -> Smoothness to 1 -> Allbedo Alpha around 50%
 
