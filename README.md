@@ -6,7 +6,9 @@ A VR workshop organized for the Department of Media and Communication, City Univ
 
 ## Abstract
 
-You will have hands on experience in creating VR applications using different tools. You will create an interior enviroment (read: a small room) twice, first using [Unity](https://unity3d.com/), and then using [A-Frame](https://aframe.io/).
+In the begining, we will have a very brief introduction of virtual reality and what we did ([slides](https://docs.google.com/presentation/d/10WiLFiutf-qMlvh_T1FlTC-I5z4oTT3HvNh1ddSF7Hg/edit?usp=sharing)).
+
+Afterwards, you will have hands on experience in creating VR applications using different tools. You will create an interior enviroment (read: a small room) twice, first using [Unity](https://unity3d.com/), and then using [A-Frame](https://aframe.io/).
 
 Firstly, you will model the room and furnitures with [Sweet Home 3D](http://www.sweethome3d.com/).
 
