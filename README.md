@@ -1,3 +1,15 @@
+## Related Events :calendar:
+
+### 2017 Unity Roadshow Hong Kong
+
+https://www.facebook.com/CGVisual/posts/10154474973422525
+
+### DE Summit X Master Talk - "Your Name" Producer Kawamura Genki
+
+https://www.facebook.com/HKDEA/photos/a.257475007655703.61123.257291024340768/1266268140109713/
+
+---
+
 # VR Workshop
 
 [![Join the chat at https://gitter.im/TCLResearchHK/VRWorkshop](https://badges.gitter.im/TCLResearchHK/VRWorkshop.svg)](https://gitter.im/TCLResearchHK/VRWorkshop?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
