@@ -184,9 +184,21 @@ You can now preview the web page by selecting "Preview" -> "Live Preview File (i
 
 #### 3.6 Import the interior model
 
-First of all, convert the .obj file exported from Sweet Home 3D to another format (.dae), because A-Frame does not fully support the .obj file exported by Sweet Home 3D. To do so, use a command line program, [assimp](http://www.assimp.org/). Download our precompiled .exe file at [assimp_3.3.1+d402825_win32.zip](https://github.com/TCLResearchHK/VRWorkshop/raw/master/assimp_3.3.1%2Bd402825_win32.zip), extract it next to the .obj file. Open a command prompt window by entering `cmd` in the file explorer location bar. Input the command as follows:
-``` bash
+First of all, convert the .obj file exported from Sweet Home 3D to another format (.dae), because A-Frame does not fully support the .obj file exported by Sweet Home 3D. To do so, use a command line program, [assimp](http://www.assimp.org/).
+
+**Windows users:**
+
+Download our precompiled .exe file at [assimp_3.3.1+d402825_win32.zip](https://github.com/TCLResearchHK/VRWorkshop/raw/master/assimp_3.3.1%2Bd402825_win32.zip), extract it next to the .obj file. Open a command prompt window by entering `cmd` in the file explorer location bar. Input the command as follows:
+``` cmd
 "assimp_3.3.1+d402825_win32\assimp.exe" export interior.obj interior.dae --config=full
+```
+Remember to replace `interior.obj` with the file name of your model.
+
+**Mac users:**
+
+Open "Terminal" (in "Applications" -> "Utilities"). Install [homebrew](https://brew.sh/), then `brew install assimp --HEAD` (assimp 3.3.1 is buggy, so we need `--HEAD`). Drag the folder containing your files to the Terminal Dock icon at the bottom. Input the command as follows:
+```bash
+assimp export interior.obj interior.dae --config=full
 ```
 Remember to replace `interior.obj` with the file name of your model.
 
